@@ -1,0 +1,330 @@
+/* Style sheet */
+
+/* Import sectipn */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap'); 
+@import './partials/_variables.css'; 
+@import './partials/_global.css';
+
+/* Font Face */
+@font-face {
+    font-family: "Barlow";
+    src: url('../fonts/Barlow/Barlow-Regular.ttf');
+}
+
+/* Font Face for Font Awesome */
+@font-face {
+    font-family: 'Font Awesome 5 Free';
+    font-style: normal;
+    font-weight: 900;
+    src: url('../fonts/webfonts/fa-solid-900.eot');
+    src: url('../fonts/webfonts/fa-solid-900.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/webfonts/fa-solid-900.woff2') format('woff2'),
+         url('../fonts/webfonts/fa-solid-900.woff') format('woff'),
+         url('../fonts/webfonts/fa-solid-900.ttf') format('truetype'),
+         url('../fonts/webfonts/fa-solid-900.svg#fontawesome') format('svg');
+}
+
+@font-face {
+    font-family: 'Font Awesome 5 Brands';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/webfonts/fa-brands-400.eot');
+    src: url('../fonts/webfonts/fa-brands-400.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/webfonts/fa-brands-400.woff2') format('woff2'),
+         url('../fonts/webfonts/fa-brands-400.woff') format('woff'),
+         url('../fonts/webfonts/fa-brands-400.ttf') format('truetype'),
+         url('../fonts/webfonts/fa-brands-400.svg#fontawesome') format('svg');
+}
+
+body {
+    font-family: var(--barlow), sans-serif;
+    background-color: var(--bg-color1); /* Light gray background */
+    color: var(--text-color2); /* Dark text color */
+}
+
+.navbar {
+    margin-bottom: 20px;
+}
+
+section {
+    padding: 60px 15px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: var(--bg-main-color);
+    color: var(--text-color);
+}
+
+/* Portfolio Card Hover Effect */
+.card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+    box-shadow: var(--box-shadow);
+}
+
+/* Sticky Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    box-shadow: var(--shadow-color);
+}
+
+footer a {
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+footer a.linkedin {
+    color: var(--primary-color); /* LinkedIn blue */
+}
+footer a.linkedin:hover {
+    color: var(--primary-color2);
+}
+
+footer a.github {
+    color: var(--text-color); /* White text for better contrast */
+}
+footer a.github:hover {
+    color: var(--social-color); /* GitHub purple on hover */
+}
+footer a.github:active {
+    color: var(--border-color2); /* Light gray when clicked */
+}
+
+footer a.email {
+    color: var(--primary-color); /* Bootstrap info color */
+}
+footer a.email:hover {
+    color: var(--primary-color2);
+}
+
+/* Navbar Toggler Icon */
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Navbar Link Hover Effect */
+.navbar-nav .nav-link {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: var(--text-color);
+    -webkit-transition: width 0.4s ease;
+    transition: width 0.4s ease;
+}
+.navbar-nav .nav-link:hover::after {
+    width: 100%;
+    left: 0;
+    background: var(--text-color);
+}
+
+/* Banner Section */
+.banner {
+    background: var(--bg-main-color); /* Dark background for contrast */
+    color: var(--text-color); /* White text color */
+    padding: 100px 0;
+}
+
+.banner .block h6 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.banner .block h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.banner .block h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.banner .cv-btn a {
+    display: inline-block;
+    padding: 10px 20px;
+    background: var(--bg-main-color); /* Change to the same grey as the banner */
+    color: var(--text-color);
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.banner .cv-btn a:hover {
+    background: var(--bg-hover); /* Adjust hover color if needed */
+}
+
+.banner .block .cv-btn {
+    padding-top: 20px;
+}
+
+.banner .block .cv-btn a {
+    border-radius: 4px;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    padding: 12px 25px;
+    text-decoration: none;
+    display: block;
+    display: inline-block;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: all 2 ease-in-out;
+    transition-delay: .1;
+    background-color: transparent;
+}
+
+.banner .block .cv-btn a:hover {
+    background-color: #ffffff;
+    color: #423940;
+}
+
+.banner .banner-image {
+    background-image: url(../img/banner/thinkingcropped.jpg);
+    min-height: 100vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.banner-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* Optional: Add some rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+}
+
+/* Add this to control the size of the logo */
+.banner-logo {
+    max-width: 100px; /* Adjust the size as needed */
+    height: auto;
+    border-radius: 10px; /* Optional: Add some rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+}
+
+/* Add this for a hovering button appear when you reach the bottom of the page to go backup*/
+#backToTopBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 100px; /* Adjust the distance from the bottom */
+    left: 50%; /* Center the button horizontally */
+    transform: translateX(-50%); /* Adjust the position to center */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #555; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    width: auto; /* Ensure the button does not span the entire width */
+}
+
+#backToTopBtn:hover {
+    background-color: #333; /* Darker background on hover */
+}
+
+
+/* Layout for project-section */
+.project-section {
+    display: flex;
+    flex-direction: column; /* Default to column for mobile-friendly layout */
+    align-items: center; /* Center elements horizontally by default */
+    text-align: center; /* Center text for smaller screens */
+    gap: 15px; /* Space between elements */
+    margin-bottom: 40px; /* Add spacing between project sections */
+}
+
+/* Layout for larger screens */
+@media (min-width: 768px) {
+    .project-section {
+        flex-direction: row; /* Row layout for larger screens */
+        align-items: flex-start; /* Align items to the top */
+        text-align: left; /* Align text to the left */
+    }
+
+    .project-img {
+        margin-right: 20px; /* Add spacing between image and text */
+    }
+}
+
+/* Title styling */
+.project-title {
+    font-size: 1.5rem; /* Larger title size */
+    margin-bottom: 10px; /* Space below the title */
+}
+
+/* Image styling */
+.project-img {
+    max-width: 150px; /* Limit image width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: Add rounded corners */
+    flex-shrink: 0; /* Prevent the image from shrinking */
+}
+
+/* Description styling */
+.project-description {
+    flex: 1; /* Allow text to take up remaining space */
+    font-size: 1rem; /* Normal text size */
+}
+
+/* Blog Section */
+#blog {
+    background-color: var(--bg-color1);
+    padding: 60px 15px;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+
+.card img {
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Load More Button */
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: var(--text-color);
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-color2);
+    border-color: var(--primary-color2);
+    color: var(--text-color);
+}
