@@ -70,3 +70,14 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     };
 });
+
+// logic to handle onload for your deferred styles
+document.addEventListener("DOMContentLoaded", function () {
+    const deferredStylesheets = document.querySelectorAll("link[media='print']");
+    deferredStylesheets.forEach((link) => {
+        link.onload = () => {
+            link.media = "all";
+        };
+    });
+});
+
