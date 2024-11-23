@@ -1,2 +1,5 @@
 /*
   Content-Security-Policy: default-src 'self'; script-src 'self' 'nonce-12345678' 'unsafe-inline'; style-src 'self' 'nonce-12345678' 'unsafe-inline'; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://kit.fontawesome.com; img-src 'self' data: https:; base-uri 'self';
+*/
+
+X-Content-Type-Options: nosniff
