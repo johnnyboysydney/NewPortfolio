@@ -207,6 +207,7 @@ footer a.email:hover {
     background-repeat: no-repeat;
     background-position: right;
 }
+  display: none; /* Ensure no background conflicts */
 
 .banner-image img {
     max-width: 100%;

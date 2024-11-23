@@ -1,12 +1,8 @@
 /* Global Classes */
 
 /* Styling of fonts, and uppercases */
-.text-uppercase {
-    text-transform: uppercase !important;
-}
-.text-lowercase {
-    text-transform: lowercase !important;
-}
+
+
 .text-capitalize {
     text-transform: capitalize !important;
 }
@@ -21,22 +17,14 @@
     }
 }
 
-@keyframes galleryIcon {
-    0% {
-        transform: translateY(-20px);
-        opacity: 0;
-    }
+
     100% {
         transform: translateY(0px);
         opacity: 1;
     }
 }
 
-@keyframes galleryText {
-    0% {
-        transform: translateY(-20px);
-        opacity: 0;
-    }
+
     100% {
         transform: translateY(0px);
         opacity: 1;
