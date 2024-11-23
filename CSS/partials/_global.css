@@ -1,8 +1,6 @@
 /* Global Classes */
 
-/* Styling of fonts, and uppercases */
-
-
+/* Styling of fonts and uppercases */
 .text-capitalize {
     text-transform: capitalize !important;
 }
@@ -17,16 +15,14 @@
     }
 }
 
-
-    100% {
-        transform: translateY(0px);
-        opacity: 1;
+/* Example of another animation if needed */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
     }
-}
-
-
     100% {
-        transform: translateY(0px);
         opacity: 1;
+        transform: translateY(0px);
     }
 }

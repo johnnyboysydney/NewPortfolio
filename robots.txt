@@ -2,4 +2,4 @@ User-agent: *
 Disallow: /private/
 Allow: /
 
-Sitemap: http://yourwebsite.com/sitemap.xml
+Sitemap: https://mellow-squirrel-a3bd48.netlify.app/sitemap.xml

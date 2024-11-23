@@ -22,10 +22,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-
-
-
-
     // Shrinking Navbar on Scroll
     window.addEventListener('scroll', function () {
         const navbar = document.querySelector('.navbar');
@@ -35,8 +31,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             navbar.classList.remove('navbar-shrink');
         }
     });
-    
-
 
     // Add Spinner for Lazy-Loaded Images
     document.addEventListener("DOMContentLoaded", function() {
@@ -49,8 +43,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
     
-
-
     document.querySelectorAll('.navbar-collapse .nav-link').forEach(link => {
         link.addEventListener('click', () => {
             const navbarCollapse = document.querySelector('.navbar-collapse');
@@ -59,7 +51,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             }
         });
     });
-
 
 // Back to Top Button (Updated)
 document.addEventListener("DOMContentLoaded", function () {
