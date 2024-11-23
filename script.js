@@ -40,3 +40,29 @@ function topFunction() {
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
     mybutton.style.display = "none"; // Hide the button after clicking
 }
+
+
+
+    // Shrinking Navbar on Scroll
+    window.addEventListener('scroll', function () {
+        const navbar = document.querySelector('.navbar');
+        if (window.scrollY > 50) {
+            navbar.classList.add('navbar-shrink');
+        } else {
+            navbar.classList.remove('navbar-shrink');
+        }
+    });
+    
+
+
+    // Add Spinner for Lazy-Loaded Images
+    document.addEventListener("DOMContentLoaded", function() {
+        const images = document.querySelectorAll('img[loading="lazy"]');
+        images.forEach(img => {
+            const spinner = document.createElement('div');
+            spinner.className = 'loading-spinner';
+            img.parentElement.insertBefore(spinner, img);
+            img.onload = () => spinner.remove();
+        });
+    });
+    

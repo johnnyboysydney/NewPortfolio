@@ -81,3 +81,20 @@
 
 
 }
+
+/* Added Responsive Media Query */
+
+    @media only screen and (max-width: 576px) {
+        .banner h1 {
+            font-size: 1.8rem;
+        }
+
+        .banner h3 {
+            font-size: 1rem;
+        }
+
+        .card {
+            margin-bottom: 15px;
+        }
+    }
+    
