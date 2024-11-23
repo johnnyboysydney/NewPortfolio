@@ -200,14 +200,12 @@ footer a.email:hover {
     color: #423940;
 }
 
-.banner .banner-image {
-    background-image: url(../img/banner/thinkingcropped.jpg);
+.banner 
     min-height: 100vh;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right;
 }
-  display: none; /* Ensure no background conflicts */
 
 .banner-image img {
     max-width: 100%;
