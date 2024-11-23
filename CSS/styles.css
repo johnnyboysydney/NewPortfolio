@@ -9,17 +9,20 @@
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
+    font-display: swap;
     src: url('../fonts/Roboto/Roboto-Regular.ttf') format('truetype');
 }
 @font-face {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
+    font-display: swap;
     src: url('../fonts/Roboto/Roboto-Bold.ttf') format('truetype');
 }
 
 @font-face {
     font-family: "Barlow";
+    font-display: swap;
     src: url('../fonts/Barlow/Barlow-Regular.ttf');
 }
 
@@ -28,6 +31,7 @@
     font-family: 'Font Awesome 5 Free';
     font-style: normal;
     font-weight: 900;
+    font-display: swap;
     src: url('../webfonts/fa-solid-900.eot');
     src: url('../webfonts/fa-solid-900.eot?#iefix') format('embedded-opentype'),
          url('../webfonts/fa-solid-900.woff2') format('woff2'),
@@ -40,6 +44,7 @@
     font-family: 'Font Awesome 5 Brands';
     font-style: normal;
     font-weight: 400;
+    font-display: swap;
     src: url('../webfonts/fa-brands-400.eot');
     src: url('../webfonts/fa-brands-400.eot?#iefix') format('embedded-opentype'),
          url('../webfonts/fa-brands-400.woff2') format('woff2'),

@@ -1,5 +1,16 @@
 {
+  "name": "new-portfolio",
+  "version": "1.0.0",
+  "description": "My optimized portfolio project",
+  "main": "index.js",
+  
   "dependencies": {
-    "bootstrap": "^5.3.3"
-  }
+    "bootstrap": "^5.3.3",
+    "penthouse": "^2.3.3"
+  },
+  "devDependencies": {
+    "critical": "^7.2.1"
+  },
+  "author": "John Merchan",
+  "license": "MIT"
 }

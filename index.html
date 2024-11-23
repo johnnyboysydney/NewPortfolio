@@ -1,27 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <link rel="canonical" href="http://localhost/index.html">
-        <meta name="description" content="Welcome to John Merchan's personal portfolio showcasing expertise in DevOps, Systems Administration, and Full Stack Development.">
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>John Merchan | Personal Portfolio</title>
-        <link rel="shortcut icon" type="image/x-icon" href="./img/brands/favicon.ico">
-        <link rel="stylesheet" href="./css/reset.css">
-        <link rel="stylesheet" href="./css/partials/_global.css">
-        <link rel="stylesheet" href="./css/partials/_variables.css">
-        <link rel="stylesheet" href="./css/styles.css">
-        <link rel="stylesheet" href="./css/all.min.css">
-        <link rel="stylesheet" href="./css/responsive.css">
-        <link rel="stylesheet" href="./CSS/bootstrap.min.css">
-        <style nonce="12345678">
-            body { margin: 0; font-family: 'Roboto', sans-serif; }
-            .navbar { background-color: #343a40; }
-            .banner { display: flex; align-items: center; justify-content: center; min-height: 100vh; }
-        </style>
-        <script type="application/ld+json">
-            {
+<head>
+    <link rel="canonical" href="http://localhost/index.html">
+    <meta name="description" content="Welcome to John Merchan's personal portfolio showcasing expertise in DevOps, Systems Administration, and Full Stack Development.">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Merchan | Personal Portfolio</title>
+
+    <!-- Inline Critical CSS -->
+    <style nonce="12345678">
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: var(--bg-color1);
+            color: var(--text-color2);
+        }
+        .navbar {
+            position: fixed;
+            top: 0;
+            z-index: 1000;
+            width: 100%;
+            background-color: #343a40;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .banner {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-color: var(--bg-main-color);
+            color: var(--text-color);
+        }
+        .banner-logo {
+            max-width: 100px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        #scroll-top-button {
+            display: none;
+            position: fixed;
+            bottom: 100px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 99;
+            border: none;
+            outline: none;
+            background-color: #555;
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+        }
+    </style>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="./img/brands/favicon.ico">
+
+    <!-- Defer Non-Critical Stylesheets -->
+    <link rel="stylesheet" href="./CSS/reset.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="./CSS/partials/_global.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="./CSS/partials/_variables.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="./CSS/styles.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="./CSS/all.min.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="./CSS/responsive.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css" media="print" onload="this.media='all'">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+        {
             "@context": "https://schema.org",
             "@type": "Person",
             "name": "John Merchan",
@@ -34,9 +81,10 @@
                 "https://www.linkedin.com/in/john-merchan-1333bb20/",
                 "https://github.com/johnnyboysydney"
             ]
-            }
-        </script>
-    </head>
+        }
+    </script>
+</head>
+
 
 
     <body>
