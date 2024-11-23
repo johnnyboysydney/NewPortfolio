@@ -7,7 +7,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>John Merchan | Blog</title>
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: https:; script-src 'self' https:; style-src 'self' https:;">
+    <meta http-equiv="Content-Security-Policy" 
+    content="default-src 'self'; 
+             script-src 'self' https://kit.fontawesome.com https://cdn.jsdelivr.net; 
+             style-src 'self' https://fonts.googleapis.com https://ka-f.fontawesome.com https://cdn.jsdelivr.net 'unsafe-inline'; 
+             font-src 'self' https://fonts.gstatic.com https://ka-f.fontawesome.com; 
+             connect-src 'self' https://ka-f.fontawesome.com; 
+             img-src 'self' data: https:;">
     <link rel="shortcut icon" type="image/x-icon" href="./img/brands/favicon.ico">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/partials/_variables.css">
@@ -155,7 +161,8 @@
     </section>
 
     <!-- Back to Top Button -->
-    <button type="button" onclick="topFunction()" id="backToTopBtn" title="Go to top">Top</button>
+    <button id="scroll-top-button" title="Go to top">Top</button>
+
 
     <!-- Footer -->
     <footer class="py-3 bg-dark text-white text-center">

@@ -7,7 +7,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>John Merchan | Personal Portfolio</title>
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: https:; script-src 'self' https:; style-src 'self' https:;">
+    <meta http-equiv="Content-Security-Policy" 
+    content="default-src 'self'; 
+             script-src 'self' https://kit.fontawesome.com https://cdn.jsdelivr.net; 
+             style-src 'self' https://fonts.googleapis.com https://ka-f.fontawesome.com https://cdn.jsdelivr.net 'unsafe-inline'; 
+             font-src 'self' https://fonts.gstatic.com https://ka-f.fontawesome.com; 
+             connect-src 'self' https://ka-f.fontawesome.com; 
+             img-src 'self' data: https:;">
+
     <link rel="shortcut icon" type="image/x-icon" href="./img/brands/favicon.ico">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/partials/_global.css">
@@ -92,7 +99,7 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="">
-                        <img src="./img/banner/thinkingcropped-mobile.webp" width="400" height="300" alt="John Merchan"  width="480" height="320">
+                        <img src="./img/banner/thinkingcropped-mobile.webp" width="341" height="480" alt="John Merchan"  width="480" height="320">
                     </div>
                 </div>
             </div>
@@ -209,7 +216,7 @@
                 <!-- Blog Card 1 -->
                 <div class="col-md-4">
                     <div class="card">
-                        <img src="./img/blog/blog1.webp" width="400" height="300" class="card-img-top" alt="Blog Post 1" loading="lazy"> 
+                        <img src="./img/blog/blog1.webp" width="400" height="300" class="card-img-top" alt="Blog Post 1" > 
                         <div class="card-body">
                             <h4 class="card-title">PowerShell Scripting</h4>
                             <p class="card-text">The best tool to manage Microsoft Windows stack, from Windows 10 to Windows Server 2019...</p>
@@ -220,7 +227,7 @@
                 <!-- Blog Card 2 -->
                 <div class="col-md-4">
                     <div class="card">
-                        <img src="./img/blog/blog2.webp" width="400" height="300" class="card-img-top" alt="Blog Post 1" loading="lazy">
+                        <img src="./img/blog/blog2.webp" width="400" height="300" class="card-img-top" alt="Blog Post 1" >
                         <div class="card-body">
                             <h4 class="card-title">Systems Best Practices</h4>
                             <p class="card-text">Many consider themselves to be pros, but lack the basic etiquette...</p>
@@ -231,7 +238,7 @@
                 <!-- Blog Card 3 -->
                 <div class="col-md-4">
                     <div class="card">
-                        <img src="./img/blog/blog3.webp" width="400" height="300" class="card-img-top" alt="Blog Post 1" loading="lazy">
+                        <img src="./img/blog/blog3.webp" width="400" height="300" class="card-img-top" alt="Blog Post 1" >
                         <div class="card-body">
                             <h4 class="card-title">Documenting Best Practices</h4>
                             <p class="card-text">Technical documentation encompasses all written documents and materials...</p>
@@ -242,7 +249,7 @@
                 <!-- Blog Card 4 -->
                 <div class="col-md-4">
                     <div class="card">
-                        <img src="./img/blog/blog4.webp" width="400" height="300" class="card-img-top" alt="Blog Post 1" loading="lazy">
+                        <img src="./img/blog/blog4.webp" width="400" height="300" class="card-img-top" alt="Blog Post 1" >
                         <div class="card-body">
                             <h4 class="card-title">10 Bad Things To Avoid In Networking</h4>
                             <p class="card-text">So, you forgot to label that RJ45 and you have no clue now, where it goes...</p>
@@ -253,7 +260,7 @@
                 <!-- Blog Card 5 -->
                 <div class="col-md-4">
                     <div class="card">
-                        <img src="./img/blog/blog5.webp" width="400" height="300" class="card-img-top" alt="Blog Post 1" loading="lazy">
+                        <img src="./img/blog/blog5.webp" width="400" height="300" class="card-img-top" alt="Blog Post 1" >
                         <div class="card-body">
                             <h4 class="card-title">IT Traveling</h4>
                             <p class="card-text">I travelled when I was working on the cruise industry...</p>
@@ -264,7 +271,7 @@
                 <!-- Blog Card 6 -->
                 <div class="col-md-4">
                     <div class="card">
-                        <img src="./img/blog/blog6.webp" width="400" height="300" class="card-img-top" alt="Blog Post 1" loading="lazy">
+                        <img src="./img/blog/blog6.webp" width="400" height="300" class="card-img-top" alt="Blog Post 1" >
                         <div class="card-body">
                             <h4 class="card-title">IT Burnout</h4>
                             <p class="card-text">When you work too much in an area you dislike.</p>
@@ -290,7 +297,7 @@
     </section>
 
     <!-- Back to Top Button -->
-    <button type="button" onclick="topFunction()" id="backToTopBtn" title="Go to top">Top</button>
+    <button id="scroll-top-button" title="Go to top">Top</button>
 
     <!-- Footer -->
     <footer class="py-3 bg-dark text-white text-center">
