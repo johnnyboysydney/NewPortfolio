@@ -233,6 +233,15 @@ footer a.email:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
 }
 
+/* Styling for Banner Image */
+.banner-image {
+    width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 768px; /* Restrict the maximum size */
+    display: block; /* Ensure it behaves as a block-level element */
+    margin: 0 auto; /* Center the image */
+}
+
 /* Add this for a hovering button appear when you reach the bottom of the page to go backup*/
 #scroll-top-button {
     display: none;

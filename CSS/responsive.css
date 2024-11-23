@@ -5,9 +5,7 @@
         padding: 2%;
         margin: 0%;
     }
-
 }
-
 
 /* if the viewport is equal to 340px or less than that */
 
@@ -19,8 +17,6 @@
     .container{
         max-width: 90%;
     }
-
-
 }
 
 /* Added Responsive Media Query */
@@ -39,3 +35,9 @@
         }
     }
     
+/* Additional Media Queries for Smaller Screens */
+@media only screen and (max-width: 576px) {
+    .banner-image {
+        max-width: 90%; /* Reduce max width on smaller screens */
+    }
+}
